@@ -1,0 +1,21 @@
+pwd: #to see file location
+
+ls: #to see the list in that location
+
+clear: #to clear the screen
+
+cd: to change dict
+cd "drivename" ://
+
+mkdir #to make a folder
+
+cd "name of folder" #to get into the folder
+
+touch "name of file with extention" #to create file inside the folder
+
+cd .. #to go back
+
+rm "file name" #to remove a file
+
+rm -rf"name of folder" #to remove the folder
+
