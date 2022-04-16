@@ -1,12 +1,12 @@
 #gitbash command list
 
-pwd: #to see file location
+pwd #to see file location
 
-ls: #to see the list in that location
+ls #to see the list of files and folder in that location
 
-clear: #to clear the screen
+clear #to clear the screen
 
-cd: to change dict
+cd #to change dict
 cd "drivename" ://
 
 mkdir #to make a folder
