@@ -1,11 +1,6 @@
 #3! (1x2x3)
 #5! (1x2x3x4x5)
 
-
-
-from re import I
-
-
 num= int(input("number:"))
 factorial=1
 
