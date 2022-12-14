@@ -3,7 +3,6 @@ from random import randint
 
 for i in range(1,85):
     print('')
-
 space = ''
 
 for i in range(1,1000):
