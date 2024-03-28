@@ -3,24 +3,26 @@ In py we keep track the first thing in the list, when we iterate through the lis
 '''
 
 #implimentation
+#class name same as our file
 class Node:
+    # will initialize with a value and a next pointer
     def __init__(self, value,next):
-        self.value = value
-        self.next = next
+        self.value = value #to hold the value 
+        self.next = next   # to hold the address of the next node in next pointer
         
     def getValue(self):
-        return self.value
+        return self.value #to get the value of the node 
     
     def getNext(self):
-        return self.next
+        return self.next # to get the address of the node
     
 
     def setValue(self,value):
-        self.value=value
+        self.value=value # to set the value 
 
-    def setNext(self,next):
-        self.next=next
+    def setNext(self,next): 
+        self.next=next # to set the next pointer
 
-    def __str__(self):
-        return str(self.value)
+    def __str__(self): #__str__ to convert integer to a string for instance (here, it will convert a node into text)
+        return str(self.value) #to print node object (next) "getNext().getValue()"
     
