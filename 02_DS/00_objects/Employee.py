@@ -5,12 +5,12 @@ its a way of representing data in our programming languages.
 Example: Employee
 Employee has attributes, properties associated with it.
 -name 
--salary
 -age
+-salary
 -job title
 our goal would be to represent all of the data in a single entity.
 
-With object, we can represent all of this in a single object.
+With object, we can represent all of this (attributes) in a single object.
 
 defining methods helps us to interact us with the properties. 
 

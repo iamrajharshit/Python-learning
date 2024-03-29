@@ -1,8 +1,10 @@
-'''A fundamental DS that holds two pieces of info, holds the value of the cureent node and the pointer to the next thing that follows it (next value it in stack or value in queue)
-In py we keep track the first thing in the list, when we iterate through the list we can just simply follow the next links unlit we reach the end. (value and the link to next)
+'''A fundamental DS that holds two pieces of info, holds the value of the cureent node and 
+the pointer to the next thing that follows it (next value it in stack or value in queue)
+In py we keep track the first thing in the list, when we iterate through the list we can
+ just simply follow the next links unlit we reach the end. (value and the link to next)
 '''
 
-#implimentation
+#Implimentation
 #class name same as our file
 class Node:
     # will initialize with a value and a next pointer
