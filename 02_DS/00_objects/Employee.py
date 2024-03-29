@@ -18,3 +18,36 @@ A class, we are going to call it, what we want to call our object.
 (In gen. we name the class same as the file name.)
 Object is a single instance of a Class.
 '''
+class Employee:
+
+    def __init__(self, name, loc, job,sal):
+        self.name=name
+        self.loc=loc
+        self.job=job
+        self.sal=sal
+
+    def getName(self):
+        return self.name
+    
+    def getLoc(self):
+        return self.loc
+    
+    def getJob(self):
+        return self.job
+    
+    def getSal(self):
+        return self.sal 
+    
+    def setName(self,name):
+        self.name=name
+
+    def setLoc(slef,loc):
+        slef.loc=loc
+
+    def setJob(self,job):
+        self.job=job
+
+    def setSal(self,sal):
+        self.sal=sal
+
+
