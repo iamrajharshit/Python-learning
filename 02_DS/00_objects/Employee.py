@@ -41,8 +41,8 @@ class Employee:
     def setName(self,name):
         self.name=name
 
-    def setLoc(slef,loc):
-        slef.loc=loc
+    def setLoc(self,loc):
+        self.loc=loc
 
     def setJob(self,job):
         self.job=job
