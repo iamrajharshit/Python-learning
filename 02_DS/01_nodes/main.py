@@ -2,12 +2,13 @@ from node import Node
 
 # 4->3->none
 
-first =Node(3,None) #its like end
-print(first.getValue(),"-->",first.getNext())
-Sec=Node(4,first)
+f=Node(3,None)
 
-print(Sec.getValue(),"-->",Sec.getNext())
+s=Node(4,f)
 
-third=Node(7,Sec)
+f.setNext(s)
+s.setValue(8)
 
-print(third.getValue(),"-->",third.getNext())
+print(s.getValue(),"-->",s.getNext(),"-->",f.getNext())
+
+

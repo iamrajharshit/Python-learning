@@ -1,11 +1,12 @@
+#Definition
 '''A fundamental DS that holds two pieces of info, holds the value of the cureent node and 
 the pointer to the next thing that follows it (next value it in stack or value in queue)
 In py we keep track the first thing in the list, when we iterate through the list we can
- just simply follow the next links unlit we reach the end. (value and the link to next)
-'''
+ just simply follow the next links unlit we reach the end. (value and the link to next)'''
 
 #Implimentation
 #class name same as our file
+
 class Node:
     # will initialize with a value and a next pointer
     def __init__(self, value,next):
@@ -27,4 +28,3 @@ class Node:
 
     def __str__(self): #__str__ to convert integer to a string for instance (here, it will convert a node into text)
         return str(self.value) #to print node object (next) "getNext().getValue()"
-    
