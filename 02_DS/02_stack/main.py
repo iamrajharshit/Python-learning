@@ -17,9 +17,14 @@ s=Stack()
 
 s.push(4)
 s.push(5)
-# s.push(3)
-# s.push(4)
-s.display()
-# print(s.pop())
-# print(s.pop())
 
+print("After Push")
+s.display()
+print(f"Lets pop top element or node: {s.pop()}")
+
+print("lets look into our stack")
+s.display()
+
+print(f"Is our stack empty?\n{s.isEmpty()}")
+
+print(f"whats on top?\n{s.peek()}")

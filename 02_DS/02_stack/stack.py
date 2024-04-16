@@ -41,7 +41,7 @@ class Stack:
         while current is not None:
             #to print only values else none will be printed! ref. init top was none
             if current.getValue() is not None:
-                print(current.getValue()) #to print vlaues
+                return(current.getValue()) #to print vlaues
             current = current.getNext() #to move forward in the stack using the -> next node 
 
 
