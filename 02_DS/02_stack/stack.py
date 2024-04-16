@@ -5,13 +5,15 @@ class Stack:
     def __init__(self):
         self.top = None #none type
 
+    #Push passing element 
     def push(self,value):
-        inVal=Node(value,self.top) #we are creating a new node, with the user value, pointing the current top.
-       # slef.top becomes a reference to that node
+        newnode=Node(value,self.top) #we are creating a new node, with the user value, pointing the current top.
+        #self.top becomes a reference to that node
         #now update the top
-        self.top=inVal #now top is pointing to the current node (inVal is the var for new node) 
+        self.top=newnode #now top is pointing to the current node (newnode is the var for new node) 
+        #here top datatype is changed to node (can access value and next)
 
-    #now pop
+    #Pop
     def pop(self):
         #first check if theres is anything in the stack
         if self.top is None:
@@ -25,20 +27,24 @@ class Stack:
             self.top=nextVal
             #return that valRet
             return valRet
-        
+   
+    #peek    
     def peek(self):
         #to know thats on the top of the stack
         return self.top.getValue()
 
-
+    #display
     def display(self):
+        #making a pointer or variable which will act same as top
         current = self.top
+        #as will be traverse to the last node, we have a loop
         while current is not None:
+            #to print only values else none will be printed! ref. init top was none
             if current.getValue() is not None:
-                print(current.getValue())
-            current = current.getNext()
+                print(current.getValue()) #to print vlaues
+            current = current.getNext() #to move forward in the stack using the -> next node 
 
 
-    
+    #isEmpty
     def isEmpty(self):
         return self.top is None #(True if its none else false)

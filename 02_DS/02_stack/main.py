@@ -1,6 +1,6 @@
 #stack implementation
-#Last in First Out
-#push, pop, stack-empty, stack-full
+#Last In First Out #First In Last Out
+#push, pop, display, stack-empty, stack-full
 
 '''Stack is a memory managment. 
 Each of these entries of the stacks are nodes, we have to keep track of which one is on top of the stack
@@ -19,7 +19,7 @@ s.push(4)
 s.push(5)
 # s.push(3)
 # s.push(4)
-
+s.display()
 # print(s.pop())
 # print(s.pop())
 
