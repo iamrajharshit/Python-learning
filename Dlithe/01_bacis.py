@@ -84,11 +84,65 @@ def pascal(n):
     
             c=c*(i-j)  # for pascal's triangle
 
-print(pascal(5))
+#print(pascal(5))
 
 
-    
-             
+def pascal01(n):
+    for i in range(1,n+1):
+        for j in range(i):
+            print('1', end="")
+        print('\n') 
                    
+# print(pascal01(4))
 
+
+
+#####################################################7#########################################
+
+
+'''
+12345
+22345
+33345
+44445
+55555
+'''
+
+def pat15(n):
+    for i in range(1,n+1):
+        for j in range(1,n+1):
+            if (j<=i):
+                print(i, end="")
+        
+            else:
+                print(j,end="")  
+        print("")
+
+#print(pat15(5))
+
+
+###################################################8###################################
+
+'''
+   *
+  * *
+ *   *
+*******
+
+2n-1 space
+'''
+
+def patS(n):
+    c=0
+    for i in range(n):
+        if i==0:
+            print(" "*(i-n)+"*")
+        elif i==n-1:
+            print("*"*(2*n-1))
+        else:
+            print(" "*(c-i-1)+"*"+" "*(i+c)+"*")
+        c=c+1
+
+
+print(patS(5))
 
