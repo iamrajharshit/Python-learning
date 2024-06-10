@@ -1,6 +1,12 @@
 '''
 When a function calls itself, then that function is called as recursive function and process is called as recursion.
 In recursion, the function is called inside itself with change in the parameters.
+
+Recursion is an alternative approach of itterations like for loops.
+
+Used in Dynamic programming:
+    suduko
+    rat in a maze
 '''
 
 import sys
