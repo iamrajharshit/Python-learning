@@ -105,7 +105,7 @@ def move_robo():
     
     return distance(mvts)
 
-print(move_robo())
+#print(move_robo())
 
 
 
@@ -120,3 +120,62 @@ input: [100,180,260,310,40,535,695]
 output: -100+310-40+695
 
 '''
+def profit():
+    pass
+
+#####################################################6####################################################
+
+'''
+Possible combination elements
+input: [1,2,3]
+output: [1],[1,2],[1,2,3],[1,3],[2],[2,3],[3]
+'''
+from itertools import combinations
+
+l=[1,2,3]
+def to_find_combi(l):
+    list_combi=[]
+    for i in range(len(l)+1):
+        combi=combinations(l,i)
+        list_combi.extend(combi)
+
+    return (list_combi)
+
+#print(to_find_combi(l))
+
+########################################################7##################################################
+
+"""
+sorting boundry elements in matrix 
+
+1 2 3 4 0 
+1 1 1 1 2 
+1 2 2 2 4 
+1 9 3 1 7
+
+output:
+
+ 0 1 1 1 1 
+ 9 1 1 1 1 
+ 7 2 2 2 2 
+ 4 4 3 3 2 
+
+"""
+# import numpy as np
+# input=np.array([[1,2,3,4,0],[1,1,1,1,2],[1,2,2,2,4],[1,9,3,1,7]])
+
+# sorted_matrix = input[input[:, 0].argsort()]
+# print(sorted_matrix)
+
+
+input_mat=[
+    [1,2,3,4,0],[1,1,1,1,2,],[1,2,2,2,4],[1,9,3,1,7]
+]
+boundary_elements=[]
+boundary_indx=[]
+
+for idx1, j in enumerate(input_mat):
+    print(idx1,'->',j,"x")
+    for ind2, k in enumerate(j):
+        print(ind2,'->',k)
+
