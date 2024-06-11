@@ -179,3 +179,33 @@ for idx1, j in enumerate(input_mat):
     for ind2, k in enumerate(j):
         print(ind2,'->',k)
 
+
+####################################################8##############################################################
+'''
+input: 2004 S=2
+
+Output: 1999
+'''
+yearx='2004'
+removex=2
+def nearest_year(yearx,removex):
+    pass
+
+def NotPresent(i,s):
+    temp= int(s)
+    while i:
+        digit=i%10
+        i=i//10
+        t=temp
+        while t:
+            digit2=t%10
+            t=t//10
+            if digit2==digit:
+                return False
+            
+    return True
+
+def grn(n,s):
+    N=int(n)
+
+###################################################################9#####################################################
