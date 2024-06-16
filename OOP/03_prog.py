@@ -29,5 +29,12 @@ def cal(func,x,y):
     return func(x,y)
 
 result= cal(mul,4,6)
-print(result)
+#print(result)
 
+#######################################################re###################################
+
+import re
+
+pattern="/[a-zA-Z0-9]/+"
+
+text="9rfgrghrtFFSD343fe"

@@ -9,3 +9,9 @@ l.insert(3,5)
 print(str(l))
 l.remove(1)
 print(str(l))
+
+# l.move_last_node_to_first()
+
+# print(str((l)))
+
+l.rev_elements()

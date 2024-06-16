@@ -82,6 +82,19 @@ class Linked:
   def __len__(self):
     return self.size
 
+  def move_last_node_to_first(self):
+    cur=self.front
+    prev=self.front
+    while(cur.next is not None):
+      prev=cur
+      cur=cur.next
+    # temp = cur
+    prev.next = None
+    cur.next=self.front
+    # prev.next=None
+    self.front=cur
+    # temp.next = self.front
+
 
        
 
